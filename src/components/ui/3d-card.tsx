@@ -1,8 +1,7 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import Image from "next/image";
-import React, {
+import {
   createContext,
   useState,
   useContext,
@@ -123,7 +122,7 @@ export const CardItem = ({
 
   useEffect(() => {
     handleAnimations();
-  }, [isMouseEntered]);
+  }, []);
 
   const handleAnimations = () => {
     if (!ref.current) return;
